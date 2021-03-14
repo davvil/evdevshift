@@ -2,11 +2,11 @@
 #include <string.h>
 #include "parser.h"
 
-int edslineno;
-YYSTYPE edslval;
-char *edstext;
+extern int edslineno;
+extern YYSTYPE edslval;
+extern char *edstext;
 const char *parsed_file;
-FILE *edsin;
+extern FILE *edsin;
 int edslex_destroy(void);
 
 t_config config;
